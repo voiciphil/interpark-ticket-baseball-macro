@@ -96,5 +96,5 @@ const loop = (wantedSeatCount, wantedAreaList) => {
             alert('좌석 선택 완료');
             clearInterval(intervalId);
         }
-    }, 1500);
+    }, 1000);
 };
