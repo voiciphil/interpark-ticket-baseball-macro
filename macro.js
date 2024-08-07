@@ -93,7 +93,7 @@ const loop = (wantedSeatCount, wantedAreaList) => {
     const intervalId = setInterval(() => {
         const success = selectSeat(wantedSeatCount, wantedAreaList);
         if (success) {
-            alert('좌석 선택 완료');
+            setTimeout(() => alert('좌석 선택 완료'), 2000);
             clearInterval(intervalId);
         }
     }, 1000);
