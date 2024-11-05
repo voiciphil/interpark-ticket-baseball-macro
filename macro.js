@@ -50,8 +50,6 @@ const select = (groupedSeatList, wantedSeatCount, wantedAreaList) => {
 };
 
 const selectSeat = (wantedSeatCount, wantedAreaList) => {
-    refreshButton.click();
-
     const seatInfoList = Array.from(
         document.getElementById('ifrmSeat')
             .contentWindow
@@ -96,5 +94,6 @@ const loop = (wantedSeatCount, wantedAreaList) => {
             setTimeout(() => alert('좌석 선택 완료'), 2000);
             clearInterval(intervalId);
         }
+        refreshButton.click();
     }, 1000);
 };
